@@ -12,7 +12,7 @@ object calculator {
         val tokens = lexer(source)
         val stack = parser(tokens)
         val ans = eval(stack)
-        println("answer : " + ans.toString)
+        println("answer : " + ans)
     }
 
     def lexer(source :String):List[Token] = {
